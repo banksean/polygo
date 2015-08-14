@@ -1,11 +1,9 @@
-package hello
+package main
 
 import (
-//    "fmt"
-    "net/http"
+	"net/http"
 )
 
 func init() {
 	http.Handle("/", http.FileServer(http.Dir("./")))
 }
-
